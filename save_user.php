@@ -13,6 +13,7 @@ include ("db.php");
     VALUES ('$userName', '$userlastName', '$userEmail', '$userAge')";
 
     $result = mysqli_query($conn, $query);
+    
     if(!$result){
         die("Query Fail");
     }else{
