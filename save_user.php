@@ -9,7 +9,7 @@ include ("db.php");
         $userAge = $_POST['age'];
     }
 
-    $query = "INSERT INTO usuarios(NAME, LASTNAME, EMAIL, AGE) 
+    $query = "INSERT INTO php_mysql_crud(NAME, LASTNAME, EMAIL, AGE) 
     VALUES ('$userName', '$userlastName', '$userEmail', '$userAge')";
 
     $result = mysqli_query($conn, $query);
