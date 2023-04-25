@@ -6,11 +6,11 @@ include ("db.php");
         $userName = $_POST['name'];
         $userlastName = $_POST['lastname'];
         $userEmail= $_POST['email'];
-        $userAge = $_POST['age'];
+        $userDocument = $_POST['document_id'];
     }
 
-    $query = "INSERT INTO php_mysql_crud(NAME, LASTNAME, EMAIL, AGE) 
-    VALUES ('$userName', '$userlastName', '$userEmail', '$userAge')";
+    $query = "INSERT INTO employees(_NAMES, _LASTNAMES, _EMAIL, _DOCUMENT_ID) 
+    VALUES ('$userName', '$userlastName', '$userEmail', '$userDocument')";
 
     $result = mysqli_query($conn, $query);
     

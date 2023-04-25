@@ -31,8 +31,8 @@
                     <input type="email" name="email" id="" class="form-control" placeholder="example@example.com">
                 </div>
                 <div class="form-group mb-3">
-                    <label class="form-label">Age</label>
-                    <input type="text" name="age" id="" class="form-control" placeholder="">
+                    <label class="form-label">Document ID</label>
+                    <input type="text" name="document_id" id="" class="form-control" placeholder="">
                 </div>
                 <input type="submit" class="btn btn-success mt-3" name="save_user" value=" Agregar Usuario">
             </form>
@@ -53,15 +53,15 @@
             </thead>
             <tbody>
                 <?php
-                $query = "SELECT * FROM php_mysql_crud";
+                $query = "SELECT * FROM employees";
                 $result_user = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_array($result_user)) { ?>
                     <tr class="text-center border-end">
                         <td class="fw-bold"><?php echo $row['ID'] ?></td>
-                        <td><?php echo $row['NAME'] ?></td>
-                        <td><?php echo $row['LASTNAME'] ?></td>
-                        <td><?php echo $row['EMAIL'] ?></td>
-                        <td><?php echo $row['AGE'] ?></td>
+                        <td><?php echo $row['_NAMES'] ?></td>
+                        <td><?php echo $row['_LASTNAMES'] ?></td>
+                        <td><?php echo $row['_EMAIL'] ?></td>
+                        <td><?php echo $row['_DOCUMENT_ID'] ?></td>
                         <td class="d-flex justify-content-around align-items-center text-center">
                             <a class="link-underline-light fw-bold" style="--bs-link-hover-color-rgb: 0, 200, 0;" href="edit.php?ID=<?php echo $row['ID'] ?>">
                                 Edit

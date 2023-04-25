@@ -3,7 +3,7 @@ include("db.php");
 
 if (isset($_GET['ID'])) {
     $ID = $_GET['ID'];
-    $query = "DELETE FROM php_mysql_crud WHERE ID = $ID";
+    $query = "DELETE FROM employees WHERE ID = $ID";
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
