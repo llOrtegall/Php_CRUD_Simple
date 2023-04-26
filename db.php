@@ -6,7 +6,7 @@ $conn = mysqli_connect(
     'localhost',
     'root',
     '',
-    'db_company'
+    'companydb'
 );
 
 if(isset($conn)){}
