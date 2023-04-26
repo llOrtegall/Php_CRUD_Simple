@@ -7,7 +7,8 @@
 
 <div class="row border">
 
-    <div class="col-lg-4 border">
+    <div class="col-4 border p-5">
+
         <?php if (isset($_SESSION['message'])) { ?>
             <div class="alert alert-success alert-dismissible fade show mt-3" tabindex="-1" role="alert">
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -15,7 +16,7 @@
             </div>
         <?php }
         session_unset(); ?>
-        <div class="m-5 p-5">
+        <div class="">
             <h5 class="text-center mb-3 fw-bold fs-4">Agregar Usuario</h5>
             <form action="save_user.php" method="POST" class="fw-bold">
                 <div class="form-group">
@@ -39,7 +40,7 @@
         </div>
     </div>
 
-    <div class="col-lg-8">
+    <div class="col-8">
         <table class="table table-bordered">
             <thead>
                 <tr class="text-center">
