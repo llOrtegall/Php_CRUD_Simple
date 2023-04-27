@@ -17,7 +17,6 @@ if (isset($_GET['ID'])) {
     $email = $row['_EMAIL'];
     $document_id = $row['_DOCUMENT_ID'];
 
-    echo "$id, $names, $lastNames, $email, $document_id";
   }
 }
 
@@ -25,7 +24,7 @@ if (isset($_GET['ID'])) {
 
 <?php include("includes/header.php"); ?>
 
-<div class="container p-5">
+<div class="container p-5 d-flex fw-bold">
   <h5 class="text-center fw-bold fs-4">Actualizar Usuario</h5>
   <form action="update.php?ID= <?php echo$id ?>" method="POST" class="fw-bold">
     <div class="form-group">

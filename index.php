@@ -43,7 +43,7 @@
     <div class="col-8">
         <table class="table table-bordered">
             <thead>
-                <tr class="text-center">
+                <tr class="text-center bg-secondary text-white ">
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
@@ -52,7 +52,7 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-body-secondary">
                 <?php
                 $query = "SELECT * FROM employees";
                 $result_user = mysqli_query($conn, $query);
